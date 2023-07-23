@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title / Fav Icon -->
+        <title>OHC Guide</title>
+        <link rel="icon" type="image/x-icon" href="./src/images/Logo/fav.png">
+
+        <!-- Icons Pack -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Linking CSS -->
+        <link rel="stylesheet" href="./public/output.css">
+
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        
+        <link rel="stylesheet" href="./public/owlCarousel.css">
+
+        <!-- Style CSS -->
+        <style>
+
+            /* Smooth Scrolling */
+            html {
+                scroll-behavior: smooth;
+            }
+
+
+            /* Hamburger Menu Switch */
+            #check:checked ~ .actionTabs{
+                right: 0;
+            }
+
+            /* Form */
+            .activeTab{
+                background: #2563eb;
+                color: white;
+            }
+
+            .activeTab .svgAgent {
+                fill: white;
+            }
+
+            .activeTab .svgAgent1{
+                fill: white;
+            }
+
+            #individual_div{
+                background: white;
+                z-index: 1;
+            }
+
+            #business_div{
+                background: transparent;
+                z-index: -1;
+            }
+            
+
+        </style>
+
+    </head>
+
+    <!-- ============ Body ============ -->
+
+    <body class="w-full overflow-x-hidden font-sans">
+
+        <!-- ============Navigation Bar============ -->
+        <header>
+
+            <nav class="navbar flex w-screen h-20 md:h-22 lg:h-24 px-6 lg:px-20 2xl:px-[250px] border-b border-b-gray-100 items-center fixed z-50 bg-white top-0 justify-between">
+
+                <div class="navContainer flex justify-between items-center w-full">
+
+                    <!-- Checkbox -->
+                    <input type="checkbox" id="check" hidden>
+
+                    <!-- Logo -->
+                    <a href="#">
+                        <img class="h-[46px]" src="./src/images/Logo/Logo.png" alt="logo">
+                    </a>
+
+                    <!-- Link Tabs -->
+                    <ul class="actionTabs flex flex-col lg:flex-row gap-5 items-center lg:justify-center h-2/4 w-full lg:max-w-fit lg:h-fit fixed lg:relative top-0 -right-full lg:right-0 z-50 bg-white ease-in-out px-5 py-5 lg:py-0 lg:px-0">
+
+                        <li class="mt-3 lg:mt-0">
+                            <a class="buttonTab mt-9 px-0 lg:px-6 py-3 text-gray-600 font-normal hover:text-gray-900 hover:font-medium"
+                                href="#whyUs">
+                                Why Us?
+                            </a>
+                        </li>
+
+                        <li class="mt-3 lg:mt-0 hidden">
+                            <a class="buttonTab flex px-0 lg:px-6 py-3 text-gray-600 font-normal hover:text-gray-900 hover:font-medium"
+                                href="">
+                                Community
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z"
+                                        fill="#4B5563" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <!-- CTA Btn -->
+                        <li class="mt-3 lg:mt-0">
+                            <a href="https://agents.ohcguide.com/">
+                                <button
+                                    class="px-6 py-3 border border-primary-500 bg-white text-primary-500 rounded font-semibold hover:shadow-md"
+                                    type="button">
+                                    Agent Sign-In
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="mt-3 lg:mt-0">
+                            <a href="https://ohcguide.com/agent-enrollment">
+                                <button
+                                    class="px-6 py-3 border bg-primary-500 text-white rounded font-semibold hover:shadow-md"
+                                    type="button" onclick="www.ohcguide.com/agent-enrollment">
+                                    Become an Agent
+                                </button>
+                            </a>
+                        </li>
+
+                        <!-- Close Icon -->
+                        <label for="check"
+                            class="close-menu block lg:hidden absolute text-gray-900 text-2xl items-center mr-6 right-5 top-5 "><i
+                                class="fas fa-times"></i></label>
+
+                    </ul>
+
+                    <!-- Hamburger -->
+                    <label for="check" class="float-right text-gray-900 text-2xl leading-[80px] mr-6 lg:hidden">
+                        <i class="fas fa-bars"></i>
+                    </label>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- ============Main Container============ -->
+        <main class="w-screen">
+
+            <!-- ============Hero Section============ -->
+            <section class="heroSection w-screen px-6 lg:px-20 2xl:px-[250px] mx-auto flex flex-col lg:flex-row mt-40 mb-20 lg:mt-56 lg:mb-24 md:justify-between lg:justify-between gap-10 md:gap-10 lg:gap-0">
+
+                <!-- Heading Content-->
+                <div class="content w-full flex flex-col md:w-3/5 lg:w-2/4 lg:mt-16 gap-10">
+
+                    <!-- Heading Left Part-->
+                    <div class="heading flex flex-col gap-4 lg:gap-6">
+
+                        <h1
+                            class="font-sans text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight lg:leading-tight xl:leading-snug font-bold w-full lg:w-full xl:w-4/5">
+                            <span class="text-blue-500">One-stop OSHC Platform</span> for Education & Migration
+                            Consultancies
+                        </h1>
+
+                        <p class="text-base lg:text-lg">
+                            OHC Guide offers the best insurance policies suitable for international students and visitors
+                            from various trusted providers.
+                        </p>
+
+                    </div>                 
+
+                </div>
+
+                <!-- Registration Form Right Part -->
+                <div class="registrationForm w-auto md:w-auto lg:w-auto flex flex-col gap-5 items-center">
+
+                    <!-- Reg Form -->
+                    <div class="formContainer w-full flex flex-col gap-5">
+
+                        <!-- Agent Type Field -->
+                        <div class="agentType w-full flex flex-col gap-1">
+
+                            <!-- section Heading -->
+                            <h4 class="font-medium">
+                                Agent Type
+                            </h4>
+
+                            <!-- Toggle -->
+                            <div class="toggleAgent w-full flex border rounded-[40px] bg-white">
+
+                                <!-- Individual -->
+                                <div class="btnToggle activeTab flex flex-row w-1/2 px-9 md:px-16 lg:px-24 py-4 gap-2 rounded-[40px] items-center justify-center cursor-pointer" id="flex-item-1">
+
+                                    <svg class="svgAgent" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_13564_370057)">
+                                        <path d="M1.36597 11.5694C1.36597 5.23244 4.02447 2.5166 4.91064 1.61133H19.0894C19.9755 2.5166 22.6341 5.23244 22.6341 11.5694C22.6341 18.8116 15.6516 21.4828 12.1069 22.3881C8.56226 21.4828 1.36597 18.8116 1.36597 11.5694Z" fill="#EAEFFD" stroke="#2F5BEA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.0001 13.3415C13.9756 13.3415 15.5771 11.74 15.5771 9.76451C15.5771 7.78899 13.9756 6.1875 12.0001 6.1875C10.0246 6.1875 8.42307 7.78899 8.42307 9.76451C8.42307 11.74 10.0246 13.3415 12.0001 13.3415Z" fill="white" stroke="#2F5BEA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.9739 19.8764C15.9505 21.2305 13.6871 21.985 12.1069 22.3885C10.5046 21.9793 8.1563 21.2093 6.06372 19.8195C6.45223 19.2418 6.92568 18.72 7.47245 18.2731C8.75016 17.2287 10.3496 16.6582 11.9998 16.6582C13.6501 16.6582 15.2495 17.2287 16.5272 18.2731C17.0919 18.7345 17.5785 19.2763 17.9739 19.8764Z" fill="white" stroke="#2F5BEA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_13564_370057">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                        
+                                    <p class="font-semibold">
+                                        Individual
+                                    </p>
+                                </div>
+
+                                <!-- Business -->
+                                <div class="btnToggle flex flex-row w-1/2 bg-white px-9 md:px-16 lg:px-24 py-4 gap-2 rounded-[40px] items-center justify-center cursor-pointer" id="flex-item-2">
+
+                                    <svg class="svgAgent1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.7143 6.85742H4.28575C2.3922 6.85742 0.857178 8.39244 0.857178 10.286V19.7146C0.857178 21.6082 2.3922 23.1431 4.28575 23.1431H19.7143C21.6079 23.1431 23.1429 21.6082 23.1429 19.7146V10.286C23.1429 8.39244 21.6079 6.85742 19.7143 6.85742Z" fill="#EAEFFD"/>
+                                        <path d="M19.7143 6.85742H4.28575C2.3922 6.85742 0.857178 8.39244 0.857178 10.286V19.7146C0.857178 21.6082 2.3922 23.1431 4.28575 23.1431H19.7143C21.6079 23.1431 23.1429 21.6082 23.1429 19.7146V10.286C23.1429 8.39244 21.6079 6.85742 19.7143 6.85742Z" stroke="#2F5BEA" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.85718 23.1431V6.85742" stroke="#2F5BEA" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.1428 23.1431V6.85742" stroke="#2F5BEA" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.71429 6.857C7.71429 5.72036 8.16582 4.63027 8.96955 3.82654C9.77327 3.02281 10.8634 2.57129 12 2.57129C13.1366 2.57129 14.2267 3.02281 15.0305 3.82654C15.8342 4.63027 16.2857 5.72036 16.2857 6.857" stroke="#2F5BEA" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>  
+
+                                    <p class="font-semibold">
+                                        Business
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Form Switch -->
+                        <div class="formTabs flex w-full">
+
+                            <!-- Individual -->
+                            <div class="individualForm flex flex-col w-full gap-5" id="individual_div">
+
+                                <!-- Form -->
+                                <form class="flex flex-col w-full gap-5" method="post" id="individualForm" action="www.ohcguide.com/agent-enrollment">
+                                
+                                    <!-- Name Field -->
+                                    <div class="nameField flex flex-col md:flex-row gap-5 w-full">
+
+                                        <!-- First Name -->
+                                        <div class="firstName flex flex-col w-full">
+
+                                            <!-- section Heading -->
+                                            <label for="text" class="font-medium">
+                                                First Name
+                                            </label>
+
+                                            <input
+                                                class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300"
+                                                type="text" id="text" required>
+
+                                        </div>
+
+                                        <!-- Last Name -->
+                                        <div class="lastName flex flex-col w-full">
+
+                                            <!-- section Heading -->
+                                            <label for="text" class="font-medium">
+                                                Last Name
+                                            </label>
+
+                                            <input
+                                                class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300"
+                                                type="text" id="text" required>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Email Field -->
+                                    <div class="emailField flex flex-col lg:flex-row gap-5 w-full">
+
+                                        <!-- Email -->
+                                        <div class="emailAddress flex flex-col w-full">
+
+                                            <!-- section Heading -->
+                                            <label for="username" class="font-medium">
+                                                Email
+                                            </label>
+
+                                            <input
+                                                class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300"
+                                                type="email" id="username" required>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Number Field -->
+                                    <div class="numberField flex flex-col lg:flex-row gap-5 w-full">
+
+                                        <!-- Phone Number -->
+                                        <div class="phoneNumber flex flex-col w-full">
+
+                                            <!-- section Heading -->
+                                            <label for="number" class="font-medium">
+                                                Phone Number
+                                            </label>
+
+                                            <input type="number" id="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" 
+                                                />
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                                <!-- Register Button -->
+                                <div class="registerButton w-full">
+                                    <a href="https://ohcguide.com/agent-enrollment" class="w-full">
+                                        <button
+                                            class="px-6 py-3 border bg-primary-500 text-white rounded text-lg font-semibold hover:shadow-md w-full"
+                                            type="submit" form="individualForm" value="submit" onclick="www.ohcguide.com/agent-enrollment">
+                                            Become an Agent
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- Business -->
+                            <div class="businessForm hidden flex-col w-full gap-5" id="business_div">
+
+                                <!-- Form -->
+                                <form class="flex flex-col w-full gap-5" method="post" id="businessForm" action="www.ohcguide.com/agent-enrollment">
+
+                                    <!-- Name Field -->
+                                    <div class="nameField flex flex-col md:flex-row gap-5 w-full">
+
+                                        <!-- First Name -->
+                                        <div class="firstName flex flex-col w-full">
+
+                                        <!-- section Heading -->
+                                        <label for="text" class="font-medium">
+                                            Contact First Name
+                                        </label>
+
+                                        <input
+                                        class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300"
+                                        type="text" id="text" required>
+
+                                        </div>
+
+                                        <!-- Last Name -->
+                                        <div class="lastName flex flex-col w-full">
+
+                                        <!-- section Heading -->
+                                        <label for="text" class="font-medium">
+                                            Contact Last Name
+                                        </label>
+
+                                        <input
+                                            class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300"
+                                            type="text" id="text" required>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Business Legal Name -->
+                                    <div class="legalName flex flex-col w-full">
+
+                                        <!-- section Heading -->
+                                        <label for="legalname" class="font-medium">
+                                            Business Legal Name
+                                        </label>
+
+                                        <input
+                                            class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300"
+                                            type="text" id="legalname" required>
+
+                                    </div>
+
+                                    <!-- Registration Number -->
+                                    <div class="regNumber flex flex-col w-full">
+
+                                        <!-- section Heading -->
+                                        <label for="regnumber" class="font-medium">
+                                            Business Registration Number
+                                        </label>
+
+                                        <input
+                                            class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300"
+                                            type="text" id="regnumber" required>
+
+                                    </div>
+
+                                    <!-- Email & Number -->
+                                    <div class="emailNumber flex flex-col md:flex-row gap-5 w-full">
+
+                                        <!-- Email -->
+                                        <div class="emailAddress flex flex-col w-full">
+
+                                            <!-- section Heading -->
+                                            <label for="username" class="font-medium">
+                                                Email
+                                            </label>
+
+                                            <input
+                                                class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300"
+                                                type="email" id="username" required>
+
+                                        </div>
+
+                                        <!-- Phone Number -->
+                                        <div class="phoneNumber flex flex-col w-full">
+
+                                            <!-- section Heading -->
+                                            <label for="number" class="font-medium">
+                                                Phone Number
+                                            </label>
+
+                                            <input type="number" id="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required class="border border-gray-100 rounded-md h-11 w-full px-2 hover:border-gray-200 focus:outline-blue-300 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" 
+                                                />
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                                <!-- Register Button -->
+                                <div class="registerButton w-full">
+                                    <a href="https://ohcguide.com/agent-enrollment" class="w-full">
+                                        <button
+                                            class="px-6 py-3 border bg-primary-500 text-white rounded text-lg font-semibold hover:shadow-md w-full"
+                                            type="submit" form="businessForm" value="submit" onclick="www.ohcguide.com/agent-enrollment">
+                                            Become an Agent
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                
+                    <!-- Book Consultation -->
+                    <p>
+                    Want to know more? 
+                        <a href="https://calendly.com/en/"><span class="font-medium text-blue-500">Book a
+                                Free Consultation</span></a>
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- ============Partner Section============ -->
+            <section class="partnerSection w-screen px-6 lg:px-20 2xl:px-[250px] mx-auto relative flex flex-col my-20 py-20 gap-10 lg:gap-20">
+
+                <!--Blob Section-->
+                <div class="backgroundBlob flex absolute -z-10 -left-[560px] -top-96">
+                    <img src="./src/images/Blobs/Blob.png" alt="">
+                </div>
+
+                <!--Partner Heading-->
+                <div class="partnerHeading flex w-full margin-auto justify-center">
+                    <h3 class="font-medium text-2xl lg:text-3xl text-center md:w-1/2">
+                        Offers Best Policies from our Trusted Insurance Providers
+                    </h3>
+                </div>
+
+                <!-- Hero Content-->
+                <div class="partnerLogo flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-center">
+                    <!-- Row1 -->
+                    <div class="row1 flex gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-center">
+
+                        <div class="logoSize flex h-16 w-32 lg:h-20 lg:w-36 xl:h-24 xl:w-40 justify-center">
+                            <img src="./src/images/Partners/bupa.png" alt="">
+                        </div>
+
+                        <div class="logoSize flex h-16 w-32 lg:h-20 lg:w-36 xl:h-24 xl:w-40 justify-center">
+                            <img src="./src/images/Partners/am.png" alt="">
+                        </div>
+
+                        <div class="logoSize flex h-16 w-32 lg:h-20 lg:w-36 xl:h-24 xl:w-40 justify-center">
+                            <img src="./src/images/Partners/allianz.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <!-- Row2 -->
+                    <div class="row2 flex gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-center">
+
+                        <div class="logoSize flex h-16 w-32 lg:h-20 lg:w-36 xl:h-24 xl:w-40 justify-center">
+                            <img src="./src/images/Partners/nib.png" alt="">
+                        </div>
+
+                        <div class="logoSize flex h-16 w-32 lg:h-20 lg:w-36 xl:h-24 xl:w-40 justify-center">
+                            <img src="./src/images/Partners/medibank.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ============Works Section============ -->
+            <section class="worksSection w-screen px-6 lg:px-20 2xl:px-[250px] mx-auto flex flex-col lg:flex-row py-20 my-20 lg:my-40 xl:my-40 gap-10 lg:gap-20">
+
+                <!--Left Heading Section-->
+                <div class="worksHeading flex flex-col gap-2 lg:w-1/2">
+                    <p class="font-sans text-sm md:text-base text-gray-500">
+                        How OHC Guide will help you ?
+                    </p>
+
+                    <h2
+                        class="font-sans text-2xl md:text-3xl xl:text-4xl leading-tight lg:leading-tight xl:leading-snug text-gray-800 font-semibold">
+                        A <span class="text-primary-500">Simple & Fast Way</span> to get the Best OSHC Insurance for your
+                        International Students.
+                    </h2>
+                </div>
+
+                <!--Right Timeline Content Section-->
+                <div class="timelineContainer flex flex-col gap-4 lg:w-2/5">
+
+                    <!--Timeline Section-->
+                    <div class="timelineItem flex gap-5">
+                        <!--Icon & Line-->
+                        <div class="iconLine flex flex-col gap-4 items-center">
+
+                            <div
+                                class="iconFrame flex w-10 lg:w-14 h-10 lg:h-14 bg-red-50 rounded-full items-center justify-center">
+
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.3385 18.6782C14.9437 18.6782 18.6769 14.9446 18.6769 10.3391C18.6769 5.73354 14.9437 2 10.3385 2C5.73326 2 2 5.73354 2 10.3391C2 14.9446 5.73326 18.6782 10.3385 18.6782Z"
+                                        fill="#FDEFED" />
+                                    <path
+                                        d="M10.3385 18.6782C14.9437 18.6782 18.6769 14.9446 18.6769 10.3391C18.6769 5.73354 14.9437 2 10.3385 2C5.73326 2 2 5.73354 2 10.3391C2 14.9446 5.73326 18.6782 10.3385 18.6782Z"
+                                        stroke="#EB5B49" stroke-width="2.85725" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22.0001 22.0001L16.2308 16.2305" stroke="#EB5B49" stroke-width="2.85725"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                            <div class="line bg-red-50 w-0.5 h-20">
+                            </div>
+
+                        </div>
+                        <!--Brief Content-->
+                        <div class="timelineContent flex flex-col gap-2 mt-1 md:mt-2 lg:mt-3">
+                            <h4 class="font-sans font-bold text-xl lg:text-2xl">
+                                Search
+                            </h4>
+                            <p class="font-sans text-base text-gray-700">
+                                Remove the hassle to visit health providers’ website. You can search, buy and manage your
+                                health insurance in one place.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!--Timeline Section-->
+                    <div class="timelineItem flex gap-5">
+                        <!--Icon & Line-->
+                        <div class="iconLine flex flex-col gap-4 items-center">
+
+                            <div
+                                class="iconFrame flex w-10 lg:w-14 h-10 lg:h-14 bg-red-50 rounded-full items-center justify-center">
+
+                                <svg width="33" height="26" viewBox="0 0 33 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.9996 19.0003L6.99978 5.80078L1 19.0003C1 20.5915 1.63212 22.1176 2.75729 23.2428C3.88247 24.368 5.40854 25.0001 6.99978 25.0001C8.59102 25.0001 10.1171 24.368 11.2423 23.2428C12.3674 22.1176 12.9996 20.5915 12.9996 19.0003Z"
+                                        fill="#FDEFED" stroke="#EB5B49" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M32.1989 19.0003L26.1991 5.80078L20.1993 19.0003C20.1993 20.5915 20.8314 22.1176 21.9566 23.2428C23.0818 24.368 24.6078 25.0001 26.1991 25.0001C27.7903 25.0001 29.3164 24.368 30.4416 23.2428C31.5668 22.1176 32.1989 20.5915 32.1989 19.0003Z"
+                                        fill="#FDEFED" stroke="#EB5B49" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3.39992 5.80078H29.7989" stroke="#EB5B49" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.5994 5.79982V1" stroke="#EB5B49" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                            <div class="line bg-red-50 w-0.5 h-20">
+                            </div>
+
+                        </div>
+                        <!--Brief Content-->
+                        <div class="timelineContent flex flex-col gap-2 mt-1 md:mt-2 lg:mt-3">
+                            <h4 class="font-sans font-bold text-xl lg:text-2xl">
+                                Compare
+                            </h4>
+                            <p class="font-sans text-base text-gray-700">
+                                Search health insurance in seconds, compare the best policy that suits you and get your clients
+                                covered in less than five mins.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!--Timeline Section-->
+                    <div class="timelineItem flex gap-5">
+                        <!--Icon & Line-->
+                        <div class="iconLine flex flex-col gap-4 items-center">
+
+                            <div
+                                class="iconFrame flex w-10 lg:w-14 h-10 lg:h-14 bg-red-50 rounded-full items-center justify-center">
+
+                                <svg width="22" height="28" viewBox="0 0 22 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.6148 11.2305H3.84608C2.82653 11.2305 2 12.057 2 13.0766V24.1531C2 25.1727 2.82653 25.9991 3.84608 25.9991H18.6148C19.6344 25.9991 20.4608 25.1727 20.4608 24.1531V13.0766C20.4608 12.057 19.6344 11.2305 18.6148 11.2305Z"
+                                        fill="#FDEFED" />
+                                    <path
+                                        d="M18.6148 11.2305H3.84608C2.82653 11.2305 2 12.057 2 13.0766V24.1531C2 25.1727 2.82653 25.9991 3.84608 25.9991H18.6148C19.6344 25.9991 20.4608 25.1727 20.4608 24.1531V13.0766C20.4608 12.057 19.6344 11.2305 18.6148 11.2305Z"
+                                        stroke="#EB5B49" stroke-width="2.28571" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M17.6917 11.2304V8.4613C17.6917 6.74765 17.0111 5.10419 15.7992 3.89248C14.5875 2.68074 12.9441 2 11.2304 2C9.51678 2 7.87333 2.68074 6.66161 3.89248C5.44988 5.10419 4.76913 6.74765 4.76913 8.4613V11.2304"
+                                        stroke="#EB5B49" stroke-width="2.28571" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M11.2304 19.5414C11.7402 19.5414 12.1535 19.1281 12.1535 18.6184C12.1535 18.1086 11.7402 17.6953 11.2304 17.6953C10.7207 17.6953 10.3074 18.1086 10.3074 18.6184C10.3074 19.1281 10.7207 19.5414 11.2304 19.5414Z"
+                                        stroke="#EB5B49" stroke-width="2.28571" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                            <div class="line bg-red-50 w-0.5 h-20">
+                            </div>
+
+                        </div>
+                        <!--Brief Content-->
+                        <div class="timelineContent flex flex-col gap-2 mt-1 md:mt-2 lg:mt-3">
+                            <h4 class="font-sans font-bold text-xl lg:text-2xl">
+                                Get Insured
+                            </h4>
+                            <p class="font-sans text-base text-gray-700">
+                                We have partnered with most of the recognized insurance providers that have the best
+                                reputation in the industry. You will always find us around the corner in the website or your
+                                portal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Timeline Section-->
+                    <div class="timelineItem flex gap-5">
+                        <!--Icon & Line-->
+                        <div class="iconLine flex flex-col gap-4 items-center">
+
+                            <div
+                                class="iconFrame flex w-10 lg:w-14 h-10 lg:h-14 bg-red-50 rounded-full items-center justify-center">
+
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 8.71596V6.14453" stroke="#EB5B49" stroke-width="1.71429"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M10.4286 15.572C10.4286 16.8577 11.5771 17.2863 13 17.2863C14.4229 17.2863 15.5714 17.2863 15.5714 15.572C15.5714 13.0006 10.4286 13.0006 10.4286 10.4291C10.4286 8.71484 11.5771 8.71484 13 8.71484C14.4229 8.71484 15.5714 9.36627 15.5714 10.4291"
+                                        stroke="#EB5B49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13 17.2852V19.8566" stroke="#EB5B49" stroke-width="1.71429"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M13 24.1431C19.154 24.1431 24.1429 19.1543 24.1429 13.0003C24.1429 6.84625 19.154 1.85742 13 1.85742C6.84597 1.85742 1.85715 6.84625 1.85715 13.0003C1.85715 19.1543 6.84597 24.1431 13 24.1431Z"
+                                        stroke="#EB5B49" stroke-width="2.29" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                            <!-- <div class="line bg-red-50 w-0.5 h-20">
+                                    </div> -->
+
+                        </div>
+                        <!--Brief Content-->
+                        <div class="timelineContent flex flex-col gap-2 mt-1 md:mt-2 lg:mt-3">
+                            <h4 class="font-sans font-bold text-xl lg:text-2xl">
+                                Earn Commission
+                            </h4>
+                            <p class="font-sans text-base text-gray-700">
+                                Enjoy up to 13.5% commission by registering as a OHCGuide Agent. Come be a part of the
+                                change.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ============ Why Us ============ -->
+            <section class="whyUsSection w-screen" id="whyUs">
+
+                <!--Container-->
+                <div
+                    class="whyUsContainer flex flex-col px-6 lg:px-20 2xl:px-[250px] bg-red-50 w-full py-20 lg:py-40 gap-10 lg:gap-20">
+
+                    <!--Heading Section-->
+                    <div class="headingSection flex flex-col gap-2 lg:gap-4 items-center">
+
+                        <h3 class="font-medium text-2xl lg:text-4xl text-gray-900">
+                            We Empower you to be Better
+                        </h3>
+
+                        <p class="text-base lg:text-xl text-gray-700 text-center">
+                            A simple & fast way to get the best health insurance.
+                        </p>
+                    </div>
+
+                    <!--Values Section-->
+                    <div class="valuesContainer flex flex-col md:flex-row lg:flex-col w-full gap-5">
+
+                        <!--COLUMN 1-->
+                        <div class="valuesColumn flex flex-col lg:flex-row w-full justify-between gap-5">
+
+                            <!--Value Box-->
+                            <div
+                                class="valuesBox flex flex-col p-5 lg:p-10 gap-6 bg-white rounded-[10px] w-full lg:w-1/3 hover:drop-shadow">
+
+                                <div class="valueImage">
+                                    <img src="./src/images/Values/Commission.png" alt="">
+                                </div>
+
+                                <h4 class="text-gray-900 font-semibold lg:font-bold text-xl lg:text-2xl h-16">
+                                    Excellent Commission Rates
+                                </h4>
+
+                                <p class="text-gray-700 text-base lg:text-lg h-16">
+                                    Earn up-to 13.5% commission on every sale.
+                                </p>
+
+                            </div>
+
+                            <!--Value Box-->
+                            <div
+                                class="valuesBox flex flex-col p-5 lg:p-10 gap-6 bg-white rounded-[10px] w-full lg:w-1/3 hover:drop-shadow">
+
+                                <div class="valueImage">
+                                    <img src="./src/images/Values/Power.png" alt="">
+                                </div>
+
+                                <h4 class="text-gray-900 font-semibold lg:font-bold text-xl lg:text-2xl h-16">
+                                    Power to Choose from Multiple Providers
+                                </h4>
+
+                                <p class="text-gray-700 text-base lg:text-lg h-16">
+                                    We provide you with multiple policy options from various providers offering many benefits.
+                                </p>
+
+                            </div>
+
+                            <!--Value Box-->
+                            <div
+                                class="valuesBox flex flex-col p-5 lg:p-10 gap-6 bg-white rounded-[10px] w-full lg:w-1/3 hover:drop-shadow">
+
+                                <div class="valueImage">
+                                    <img src="./src/images/Values/Platform.png" alt="">
+                                </div>
+
+                                <h4 class="text-gray-900 font-semibold lg:font-bold text-xl lg:text-2xl h-16">
+                                    Single Platform to Track Policies
+                                </h4>
+
+                                <p class="text-gray-700 text-base lg:text-lg h-16">
+                                    Track all your policies from our platform by their current status.                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!--COLUMN 2-->
+                        <div class="valuesColumn flex flex-col lg:flex-row w-full justify-between gap-5">
+
+                            <!--Value Box-->
+                            <div
+                                class="valuesBox flex flex-col p-5 lg:p-10 gap-6 bg-white rounded-[10px] w-full lg:w-1/3 hover:drop-shadow">
+
+                                <div class="valueImage">
+                                    <img src="./src/images/Values/Deals.png" alt="">
+                                </div>
+
+                                <h4 class="text-gray-900 font-semibold lg:font-bold text-xl lg:text-2xl h-16">
+                                    Best Insurance Deals from Providers
+                                </h4>
+
+                                <p class="text-gray-700 text-base lg:text-lg h-16">
+                                    Provide your clients with the best suitable insurance policy.
+                                </p>
+
+                            </div>
+
+                            <!--Value Box-->
+                            <div
+                                class="valuesBox flex flex-col p-5 lg:p-10 gap-6 bg-white rounded-[10px] w-full lg:w-1/3 hover:drop-shadow">
+
+                                <div class="valueImage">
+                                    <img src="./src/images/Values/Track.png" alt="">
+                                </div>
+
+                                <h4 class="text-gray-900 font-semibold lg:font-bold text-xl lg:text-2xl h-16">
+                                    Track Commissions
+                                </h4>
+
+                                <p class="text-gray-700 text-base lg:text-lg h-16">
+                                    Track all the commission transactions from the wallet summary. 
+                                </p>
+
+                            </div>
+
+                            <!--Value Box-->
+                            <div
+                                class="valuesBox flex flex-col p-5 lg:p-10 gap-6 bg-white rounded-[10px] w-full lg:w-1/3 hover:drop-shadow">
+
+                                <div class="valueImage">
+                                    <img src="./src/images/Values/Guarantee.png" alt="">
+                                </div>
+
+                                <h4 class="text-gray-900 font-semibold lg:font-bold text-xl lg:text-2xl h-16">
+                                    30 Days Commission & Refund Guarantee
+                                </h4>
+
+                                <p class="text-gray-700 text-base lg:text-lg h-16">
+                                    You can apply for refund and commission claim directly from the portal.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ============ Benefits ============ -->
+            <section class="benefitsSection w-screen" id="benefits">
+
+                <div
+                    class="benefitsContainer flex flex-col px-6 lg:px-20 2xl:px-[250px] bg-blue-50 w-full py-20 lg:py-40 gap-10 lg:gap-20">
+
+                    <!--Heading Section-->
+                    <div class="headingSection flex flex-col gap-2 lg:gap-4 items-center">
+
+                        <h3 class="font-medium text-2xl lg:text-4xl text-gray-900 text-center">
+                            Here’s what OHC Guide Offers You
+                        </h3>
+
+                    </div>
+
+                    <!--Benefits Section-->
+                    <div class="benefitsContent flex flex-col gap-5">
+
+                        <!--Column 1-->
+                        <div class="benefitsColumn flex flex-col lg:flex-row w-full">
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M26.6972 9.51172C27.5263 10.2535 28.2245 10.9735 28.7481 11.5408C29.1099 11.9417 29.3102 12.4626 29.3102 13.0026C29.3102 13.5427 29.1099 14.0635 28.7481 14.4644C26.4572 16.9299 21.2427 21.7299 15.1554 21.7299H14.2827"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.32576 19.8298C5.79841 18.4143 3.51479 16.6022 1.56212 14.4625C1.20029 14.0616 1 13.5408 1 13.0007C1 12.4607 1.20029 11.9398 1.56212 11.5389C3.85303 9.07344 9.06758 4.27344 15.1548 4.27344C17.5544 4.32359 19.9027 4.97633 21.9839 6.17162"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M27.1541 1L3.15411 25" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M12.0777 16.0767C11.2583 15.2621 10.7953 14.1558 10.7905 13.0004C10.7905 11.843 11.2502 10.7331 12.0685 9.9148C12.8869 9.09646 13.9968 8.63672 15.1541 8.63672C16.3095 8.64159 17.4159 9.10453 18.2305 9.92399"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M18.9505 15.1797C18.5621 15.8436 18.0051 16.3931 17.3359 16.7724"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        White Labeling
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Send personalized quotes with your own branding to your clients and spread your
+                                        brand awareness.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 29.8008H25.3579" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M14.2861 22.0492L7.64306 23.2449L8.75024 16.5133L23.6528 1.655C23.8587 1.44745 24.1036 1.28272 24.3734 1.1703C24.6433 1.05788 24.9327 1 25.225 1C25.5173 1 25.8068 1.05788 26.0766 1.1703C26.3465 1.28272 26.5914 1.44745 26.7972 1.655L29.1444 4.00222C29.352 4.20807 29.5167 4.45298 29.6291 4.72282C29.7416 4.99266 29.7994 5.28209 29.7994 5.57441C29.7994 5.86673 29.7416 6.15616 29.6291 6.426C29.5167 6.69584 29.352 6.94075 29.1444 7.1466L14.2861 22.0492Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        Generate Instant Quotation
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Access and compare varieties of health insurances from different providers in 1
+                                        single platform.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="34" height="26" viewBox="0 0 34 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.9998 19.0005L6.99988 5.80078L1 19.0005C1 20.5918 1.63213 22.1179 2.75732 23.2431C3.88252 24.3683 5.40861 25.0004 6.99988 25.0004C8.59115 25.0004 10.1172 24.3683 11.2424 23.2431C12.3676 22.1179 12.9998 20.5918 12.9998 19.0005Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M32.1994 19.0005L26.1995 5.80078L20.1996 19.0005C20.1996 20.5918 20.8317 22.1179 21.9569 23.2431C23.0821 24.3683 24.6082 25.0004 26.1995 25.0004C27.7908 25.0004 29.3169 24.3683 30.4421 23.2431C31.5673 22.1179 32.1994 20.5918 32.1994 19.0005Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3.39996 5.80078H29.7994" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.5997 5.79991V1" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        Power to choose
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Agents can freely compare the policies as per client requirement and purchase it.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--Column 2-->
+                        <div class="benefitsColumn flex flex-col lg:flex-row w-full">
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="23" height="26" viewBox="0 0 23 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.7704 25V20.3843H19.463C19.9527 20.3843 20.4223 20.1897 20.7685 19.8435C21.1148 19.4972 21.3093 19.0276 21.3093 18.538V11.1528C21.309 9.34805 20.8277 7.57604 19.915 6.01913C19.0023 4.46223 17.6912 3.17668 16.1166 2.29484C14.542 1.413 12.7608 0.966714 10.9565 1.00193C9.1521 1.03716 7.38972 1.55261 5.85075 2.49523C4.31178 3.43785 3.05182 4.77358 2.20058 6.36491C1.34934 7.95625 0.93757 9.7457 1.00766 11.549C1.07776 13.3524 1.62718 15.1045 2.59937 16.6249C3.57157 18.1454 4.9314 19.3793 6.5389 20.1996V25"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        AI Powered
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Implementing AI technologies in various part of our platform that enables hyper
+                                        growth.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.4 9.86214V6.53906" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M12.0769 18.7248C12.0769 20.3864 13.5612 20.9402 15.4 20.9402C17.2388 20.9402 18.7231 20.9402 18.7231 18.7248C18.7231 15.4017 12.0769 15.4017 12.0769 12.0787C12.0769 9.86328 13.5612 9.86328 15.4 9.86328C17.2388 9.86328 18.7231 10.7051 18.7231 12.0787"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M15.4 20.9414V24.2645" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.4 29.8C23.3529 29.8 29.8 23.3529 29.8 15.4C29.8 7.4471 23.3529 1 15.4 1C7.4471 1 1 7.4471 1 15.4C1 23.3529 7.4471 29.8 15.4 29.8Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        Easy Payments
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Easy process through credit card, bank transfer or in-bank payments, where the OHC
+                                        guide has already connected with various local banks.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.583 1H3.21525C1.9918 1 1 1.9918 1 3.21525V24.2601C1 25.4836 1.9918 26.4754 3.21525 26.4754H27.583C28.8065 26.4754 29.7983 25.4836 29.7983 24.2601V3.21525C29.7983 1.9918 28.8065 1 27.583 1Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M18.722 17.6167C20.863 17.6167 22.5987 15.881 22.5987 13.74C22.5987 11.5989 20.863 9.86328 18.722 9.86328C16.581 9.86328 14.8453 11.5989 14.8453 13.74C14.8453 15.881 16.581 17.6167 18.722 17.6167Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M18.722 7.09375V9.86281" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.722 17.6172V20.3863" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25.3678 13.7383H22.5987" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.8453 13.7383H12.0763" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M23.4183 9.04297L21.4689 10.9924" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.9751 16.4844L14.0257 18.4338" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M23.4184 18.4338L21.4689 16.4844" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.9751 10.9924L14.0257 9.04297" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.53815 9.86328V17.6167" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.32288 26.4766V29.7994" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25.3678 26.4766V29.7994" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        Sales Machine
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Agents can integrate insurance compare and purchase system within their website.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--Column 3-->
+                        <div class="benefitsColumn flex flex-col lg:flex-row w-full">
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6921 9.30757L24.9996 1" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.6151 1H24.9996V8.3845" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.30757 16.6914L1 24.999" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.3845 25.0017H1V17.6172" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.46143 7.46094L18.5382 18.5377" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        Globally Scalable
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Scalable platform backed by advanced cloud architecture with expandable insurance
+                                        categories.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="27" height="31" viewBox="0 0 27 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.3685 20.9399C25.3685 14.2939 19.9188 9.86328 13.1842 9.86328C6.44968 9.86328 1 14.2939 1 20.9399V29.8011H25.3685V20.9399Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M13.1842 9.86127V1" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 23.1523H25.3685" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.75361 23.1523V29.7983" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.6149 23.1523V29.7983" stroke="#EB5B49" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M8.75361 18.7231C9.36536 18.7231 9.86127 18.2272 9.86127 17.6155C9.86127 17.0037 9.36536 16.5078 8.75361 16.5078C8.14187 16.5078 7.64595 17.0037 7.64595 17.6155C7.64595 18.2272 8.14187 18.7231 8.75361 18.7231Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M17.6149 18.7231C18.2266 18.7231 18.7225 18.2272 18.7225 17.6155C18.7225 17.0037 18.2266 16.5078 17.6149 16.5078C17.0031 16.5078 16.5072 17.0037 16.5072 17.6155C16.5072 18.2272 17.0031 18.7231 17.6149 18.7231Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        Robotic Processing
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Our manual process has been automated with a robotic process so that our customers
+                                        can get insured within minutes.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!--Benefit Block-->
+                            <div class="benefitBlock flex flex-col p-5 lg:p-10 gap-4 lg:w-1/3">
+
+                                <!--Icons-->
+                                <div class="benefitIcons flex bg-red-50 w-12 h-12 items-center justify-center">
+                                    <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.6675 24.8762C13.2397 25.0413 12.7658 25.0413 12.338 24.8762V24.8762C8.99694 23.5662 6.12817 21.2798 4.10572 18.3153C2.08327 15.3508 1.00099 11.8457 1 8.25703V2.84657C1 2.35683 1.19455 1.88715 1.54085 1.54085C1.88715 1.19455 2.35683 1 2.84657 1H23.1589C23.6486 1 24.1183 1.19455 24.4646 1.54085C24.8109 1.88715 25.0055 2.35683 25.0055 2.84657V8.23857C25.0082 11.8304 23.9276 15.3395 21.9049 18.3077C19.8822 21.2758 17.0114 23.565 13.6675 24.8762V24.8762Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15.7726 10.2344H10.2329C9.21303 10.2344 8.38629 11.0611 8.38629 12.0809V15.7741C8.38629 16.7939 9.21303 17.6207 10.2329 17.6207H15.7726C16.7924 17.6207 17.6192 16.7939 17.6192 15.7741V12.0809C17.6192 11.0611 16.7924 10.2344 15.7726 10.2344Z"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15.7726 10.2297V8.38314C15.7726 8.0194 15.7009 7.65922 15.5617 7.32316C15.4225 6.98711 15.2185 6.68176 14.9613 6.42455C14.7041 6.16735 14.3987 5.96332 14.0627 5.82412C13.7266 5.68493 13.3665 5.61328 13.0027 5.61328C12.639 5.61328 12.2788 5.68493 11.9427 5.82412C11.6067 5.96332 11.3013 6.16735 11.0441 6.42455C10.7869 6.68176 10.5829 6.98711 10.4437 7.32316C10.3045 7.65922 10.2328 8.0194 10.2328 8.38314V10.2297"
+                                            stroke="#EB5B49" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <!--Body Content-->
+                                <div class="bodyContent flex flex-col gap-2">
+                                    <h5 class="font-medium text-xl text-gray-900">
+                                        Data security and Privacy
+                                    </h5>
+
+                                    <p class="text-gray-700">
+                                        Data you enter in the system gets directly uploaded to the most secure cloud
+                                        database, AWS server itself.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ============ Testimonials ============ -->
+            <section class="testimonialSection w-screen" id="testimonials">
+
+                <div class="testimonialContainer relative flex flex-col px-6 lg:px-20 2xl:px-[250px] w-full py-20 lg:py-40 gap-10 lg:gap-20">
+
+                    <!--Heading Section-->
+                    <div class="headingSection flex flex-col gap-2 lg:gap-4 items-center">
+
+                        <h3 class="font-medium text-2xl lg:text-4xl text-gray-900">
+                            Insurance Agents just like You
+                        </h3>
+
+                        <p class="text-base lg:text-xl text-gray-700 text-center">
+                            Agents from across the globe have chosen to secure their insurance through our portal.
+                        </p>
+                    </div>
+
+                    <!--Testimonial Section-->
+                    <div class="testimonialSaying flex flex-col w-full justify-center gap-5 lg:gap-10">
+
+                        <!--Quotes-->
+                        <div class="testimonialContent relative flex w-full py-5 px-0 lg:px-32 justify-center">
+
+                            <!--Carousel Container-->
+                            <div class="owl-carousel flex w-full gap-10">
+
+                                <!--Saying 1-->
+                                <div class="owlContainer flex flex-col w-full gap-8 lg:gap-10 justify-center"> 
+
+                                    <!--Text-->
+                                    <p class="quote font-semibold text-xl lg:text-2xl text-center">
+                                        “OHC Guide has made it easier to purchase overseas health coverage for our clients travelling abroad for further studies and visits. Access to multiple policies from a single platform is a plus point.” 
+                                    </p>
+
+                                    <!--Avatar-->
+                                    <div class="avatar flex flex-col gap-4 items-center justify-center">
+
+                                        <!--Image-->
+                                        <div class="avatarImage flex w-16 lg:w-20">
+                                            <img src="./src/images/Testimonials/coastline.png" alt="">
+                                        </div>
+
+                                        <!--Name-->
+                                        <div class="avatarName flex justify-center">
+                                            <p class="text-base lg:text-lg font-semibold text-gray-800 text-center w-3/4">
+                                                Coastline Education And Visa Services Pvt. Ltd.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+
+                                <!--Saying 2-->
+                                <div class="owlContainer flex flex-col w-full gap-8 lg:gap-10 justify-center"> 
+
+                                    <!--Text-->
+                                    <p class="quote font-semibold text-xl lg:text-2xl text-center">
+                                        “It is a one stop solution for health insurance provider and helps people to choose and buy right policy.” 
+                                    </p>
+
+                                    <!--Avatar-->
+                                    <div class="avatar flex flex-col gap-4 items-center justify-center">
+
+                                        <!--Image-->
+                                        <div class="avatarImage flex w-16 lg:w-20">
+                                            <img src="./src/images/Testimonials/grace.png" alt="">
+                                        </div>
+
+                                        <!--Name-->
+                                        <div class="avatarName flex justify-center">
+                                            <p class="text-base lg:text-lg font-semibold text-gray-800 text-center w-3/4">
+                                                Grace international Pvt. Ltd.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+
+                                <!--Saying 3-->
+                                <div class="owlContainer flex flex-col w-full gap-8 lg:gap-10 justify-center"> 
+
+                                    <!--Text-->
+                                    <p class="quote font-semibold text-xl lg:text-2xl text-center">
+                                        “It is prompt, knowledgeable, efficient, and friendly, always finding us the best deal.” 
+                                    </p>
+
+                                    <!--Avatar-->
+                                    <div class="avatar flex flex-col gap-4 items-center justify-center">
+
+                                        <!--Image-->
+                                        <div class="avatarImage flex w-16 lg:w-20">
+                                            <img class="flex" src="./src/images/Testimonials/ed.png" alt="">
+                                        </div>
+
+                                        <!--Name-->
+                                        <div class="avatarName flex justify-center">
+                                            <p class="text-base lg:text-lg font-semibold text-gray-800 text-center w-3/4">
+                                                EdVision Pvt. Ltd.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <!--Quotes Logo BG-->
+                            <div class="quoteBackground flex absolute w-full justify-center opacity-50">
+                            <img src="./src/images/Testimonials/quote.png" alt="">
+                            </div>
+
+                        </div> 
+
+                    </div>
+
+                    <!--Ornaments BG-->
+                    <div class="ornamentsBackground flex absolute opacity-50 right-0">
+                        <img src="./src/images/Testimonials/OrnamentB.png" alt="">
+                    </div>
+
+                    <!--Ornaments BG-->
+                    <div class="ornamentsBackground flex absolute opacity-80 bottom-40">
+                        <img src="./src/images/Testimonials/Ornamentsb.png" alt="">
+                    </div>  
+
+                </div>
+
+            </section>
+
+            <!-- ============ Register ============ -->
+            <section class="registerSection w-screen relative px-6 lg:px-20 2xl:px-[250px] py-5 lg:py-20 mx-auto flex">
+
+                <!--Register Container-->
+                <div class="registerContainer flex flex-col md:flex-row w-full bg-blue-500 px-5 lg:px-20 py-10 gap-8 lg:gap-32 items-center justify-between">
+                    
+                    <!--Agent Image-->
+                    <img class="hidden md:flex md:w-2/4" src="./src/images/Hero/HeroImage.png" alt="">
+
+                    <!--Content Section-->
+                    <div class="registerContent flex flex-col gap-8">
+
+                        <!--Heading-->
+                        <div class="headingRegister flex flex-col gap-2 lg:gap-3">
+                            <h3 class="font-semibold text-xl lg:text-4xl text-white">
+                                Become an Agent in few easy steps.
+                            </h3>
+
+                            <p class="text-gray-50 lg:text-lg">
+                                Get access to a dedicated portal to compare, purchase and track all insurance services within the system.
+                            </p>
+
+                        </div>
+
+                        <!--Agent Image for Mobile-->
+                        <img class="flex md:hidden" src="./src/images/Hero/HeroImage.png" alt="">
+
+                        <!--Points-->
+                        <div class="pointsRegister flex flex-col gap-5">
+
+                            <!--Point 1-->
+                            <div class="point flex gap-2 lg:gap-3">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.39999 26.0981L9.35354 23.1445" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.6173 24.3115C12.48 24.45 12.3167 24.5598 12.1367 24.6348C11.9567 24.7098 11.7637 24.7484 11.5688 24.7484C11.3738 24.7484 11.1808 24.7098 11.0008 24.6348C10.8209 24.5598 10.6576 24.45 10.5203 24.3115L8.18696 21.9782C8.04855 21.841 7.93869 21.6776 7.86371 21.4977C7.78874 21.3177 7.75014 21.1247 7.75014 20.9297C7.75014 20.7348 7.78874 20.5418 7.86371 20.3618C7.93869 20.1818 8.04855 20.0185 8.18696 19.8812L20.2522 7.81599C20.8397 7.22849 21.6365 6.89844 22.4674 6.89844C23.2982 6.89844 24.095 7.22849 24.6825 7.81599C25.27 8.40348 25.6001 9.2003 25.6001 10.0311C25.6001 10.862 25.27 11.6588 24.6825 12.2463L12.6173 24.3115Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.6445 14.2839L16.3092 7.94855C16.1719 7.81013 16.0085 7.70027 15.8286 7.62529C15.6486 7.55032 15.4556 7.51172 15.2607 7.51172C15.0657 7.51172 14.8727 7.55032 14.6927 7.62529C14.5128 7.70027 14.3494 7.81013 14.2121 7.94855L9.35356 12.8071" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <p class="text-gray-50 lg:text-lg">
+                                    Submit your agent application with valid information; as an Business or Individual.
+                                </p>
+                            </div>
+
+                            <!--Point 2-->
+                            <div class="point flex gap-2 lg:gap-3">
+                                <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.8615 6.89844H7.13846C6.73061 6.89844 6.39999 7.22906 6.39999 7.6369V19.4523C6.39999 19.8601 6.73061 20.1907 7.13846 20.1907H24.8615C25.2694 20.1907 25.6 19.8601 25.6 19.4523V7.6369C25.6 7.22906 25.2694 6.89844 24.8615 6.89844Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.5231 20.1914L13.0462 23.8837" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.4769 20.1914L18.9538 23.8837" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.5692 23.8828H20.4308" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.3077 14.2822L15.2615 16.4975L20.4307 10.5898" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                <p class="text-gray-50 lg:text-lg">
+                                    Once submitted our team will verify it and send you a confirmation email.
+                                </p>
+                            </div>
+
+                            <!--Point 3-->
+                            <div class="point flex gap-2 lg:gap-3 items-center">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.6 17.9766L19.515 26.0996L15.4535 23.0572" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.0461 13.5446C14.8814 13.5446 16.3692 12.0568 16.3692 10.2215C16.3692 8.38623 14.8814 6.89844 13.0461 6.89844C11.2108 6.89844 9.72305 8.38623 9.72305 10.2215C9.72305 12.0568 11.2108 13.5446 13.0461 13.5446Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.0923 24.6213H6.39999V22.4059C6.40115 21.0923 6.79157 19.8085 7.52193 18.7166C8.2523 17.6247 9.28986 16.7738 10.5036 16.2712C11.7173 15.7687 13.0527 15.6371 14.3411 15.893C15.6296 16.149 16.8133 16.781 17.7428 17.7093" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                <p class="text-gray-50 lg:text-lg">
+                                    Congratulations, your partner application has been approved.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!--Register CTA-->
+                        <a href="https://ohcguide.com/agent-enrollment">
+                            <button class="flex w-full justify-center md:w-auto px-6 py-3 border border-white bg-transparent text-white rounded font-semibold hover:shadow-md"
+                                type="button">
+                                Register Now
+                            </button>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!--Background Elements-->
+                <div class="logoBackground absolute flex w-full -z-10 -left-10 top-0">
+                    <img class="flex object-scale-down" src="./src/images/Register/Logo-BG-Elements.png" alt="">
+                </div>
+
+            </section>
+
+            <!-- ============ Blogs ============ -->
+            <section class="blogsSection w-screen flex px-6 lg:px-20 2xl:px-[250px] py-10 lg:py-32 mx-auto">
+
+                <!--Blogs Container-->
+                <div class="blogsContainer flex flex-col w-full gap-10">
+                    
+                    <!--Heading Section-->
+                    <div class="headingSection flex w-full items-center justify-between">
+
+                        <h3 class="block font-medium text-2xl lg:text-4xl text-gray-900 text-center">
+                            Insights from our Blogs
+                        </h3>
+
+                        <!--View More CTA-->
+                        <a href="#">
+                            <button class="hidden lg:flex w-auto px-6 py-3 border border-primary-500 bg-transparent text-primary-500 rounded font-semibold hover:shadow-md"
+                                type="button">
+                                View All
+                            </button>
+                        </a>
+
+                    </div>
+
+                    <!--Blogs Content-->
+                    <div class="blogsContent w-full flex flex-col md:flex-row gap-10 md:gap-0 lg:gap-0 justify-between">
+
+                        <!--Blog 1-->
+                        <div class="blog md:w-1/2 lg:w-1/3 flex flex-col gap-4">
+
+                            <!--Image-->
+                            <div class="blogImage">
+                                <img class="flex object-fill" src="./src/images/Blogs/blog1.png" alt="">
+                            </div>
+
+                            <!--Description-->
+                            <div class="blogDescription flex flex-col gap-4">
+
+                                <!--Category-->
+                                <div class="flex category p-1 w-fit border border-transparent border-b-green-500">
+                                    <h6>
+                                        Events
+                                    </h6>
+                                </div>
+
+                                <!--Brief-->
+                                <div class="brief flex flex-col gap-2">
+
+                                    <a href="#">
+                                        <h5 class="font-semibold text-xl lg:text-2xl text-gray-900 hover:underline hover:text-primary-500">
+                                            ICEF Event, where technology meets passion, people, and progress.
+                                        </h5>
+                                    </a>
+
+                                    <p class="text-gray-700 truncate">
+                                        ICEF Events are events that bring together student recruitment professionals from all around the world. And with every subsequent event, ICEF gains popularity and we serve
+                                    </p>
+                                    
+                                </div>
+
+                                <!--Posted-->
+                                <div class="date flex gap-2">
+                                    <p class="text-gray-500">
+                                        09 Feb 2023
+                                    </p>
+                                    <p class="text-gray-500">
+                                        |
+                                    </p>
+                                    <p class="text-gray-500">
+                                        Gretchen Herwitz
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            
+
+                        </div>
+
+                        <!--Blog 2-->
+                        <div class="blog md:w-1/2 lg:w-1/3 flex flex-col gap-4">
+
+                            <!--Image-->
+                            <div class="blogImage">
+                                <img src="./src/images/Blogs/blog2.png" alt="">
+                            </div>
+
+                            <!--Description-->
+                            <div class="blogDescription flex flex-col gap-4">
+
+                                <!--Category-->
+                                <div class="flex category p-1 w-fit border border-transparent border-b-green-500">
+                                    <h6>
+                                        ESIGN
+                                    </h6>
+                                </div>
+
+                                <!--Brief-->
+                                <div class="brief flex flex-col gap-2">
+
+                                    <a href="">
+                                        <h5 class="font-semibold text-xl lg:text-2xl text-gray-900 hover:underline hover:text-primary-500">
+                                            OHC 101: Electronic Signature Platform to Elevate Your Business
+                                        </h5>
+                                    </a>
+                                    
+                                    <p class="text-gray-700 truncate">
+                                        In today’s age, it is more important than ever for businesses to stay ahead of the competition and make the most of their resources.
+                                    </p>
+                                    
+                                </div>
+
+                                <!--Posted-->
+                                <div class="date flex gap-2">
+                                    <p class="text-gray-500">
+                                        08 Feb 2023
+                                    </p>
+                                    <p class="text-gray-500">
+                                        |
+                                    </p>
+                                    <p class="text-gray-500">
+                                        Lindsey Geidt
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            
+
+                        </div>
+
+                        <!--Blog 3-->
+                        <div class="blog md:hidden lg:flex lg:w-1/3 flex flex-col gap-4">
+
+                            <!--Image-->
+                            <div class="blogImage">
+                                <img src="./src/images/Blogs/blog3.png" alt="">
+                            </div>
+
+                            <!--Description-->
+                            <div class="blogDescription flex flex-col gap-4">
+
+                                <!--Category-->
+                                <div class="flex category p-1 w-fit border border-transparent border-b-green-500">
+                                    <h6>
+                                        Technology
+                                    </h6>
+                                </div>
+
+                                <!--Brief-->
+                                <div class="brief flex flex-col gap-2">
+
+                                    <a href="">
+                                        <h5 class="font-semibold text-xl lg:text-2xl text-gray-900 hover:underline hover:text-primary-500">
+                                            How are We Using the Most Talked About ChatGPT to Make Work Easier?
+                                        </h5>
+                                    </a>
+                                    
+                                    <p class="text-gray-700 truncate">
+                                        With technology advancement or a new platform launch, there are always talks in the market about their benefits to people and companies. And ChatGpt is no different!
+                                    </p>
+                                    
+                                </div>
+
+                                <!--Posted-->
+                                <div class="date flex gap-2">
+                                    <p class="text-gray-500">
+                                        03 Feb 2023
+                                    </p>
+                                    <p class="text-gray-500">
+                                        |
+                                    </p>
+                                    <p class="text-gray-500">
+                                        Zain Workman
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            
+
+                        </div>
+
+                    </div>
+
+                    <!--View More for Mobile-->
+                    <a href="#">
+                        <button class="flex md:hidden w-full px-6 py-3 justify-center border border-transparent bg-transparent text-primary-500 rounded font-semibold"
+                            type="button">
+                            View All
+                        </button>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- ============ FAQs ============ -->
+            <section class="faqSection w-screen flex px-6 lg:px-20 2xl:px-[250px] py-20 lg:py-40 mx-auto bg-blue-50">
+
+                <!--FQAs Container-->
+                <div class="faqContainer md:px-20 lg:px-60 flex flex-col gap-10 lg:gap-20">
+
+                    <!--Heading Section-->
+                    <div class="headingSection flex flex-col gap-2 lg:gap-4 items-center">
+
+                        <h3 class="font-medium text-2xl lg:text-4xl text-gray-900">
+                            Frequently Asked Questions
+                        </h3>
+
+                        <p class="text-base lg:text-xl text-gray-700 text-center">
+                            Have concerns that need attention? <br>
+                            Let us take care of your queries regarding all the confusions!
+                        </p>
+                    </div>
+                
+                    <!--FAQ Section-->
+                    <div class="flex flex-col justify-center ">
+
+                        <!--Acordion Wrapper-->
+
+                        <!--1-->
+                        <div class="acordionWrapper relative border border-transparent border-b-gray-300 p-5">
+
+                            <!--Input Checkbox-->
+                            <input class="absolute peer opacity-0" type="checkbox" id="input1">
+
+                            <!--Question-->
+                            <label class="font-semibold flex text-lg lg:text-xl text-gray-900 my-4 px-2 w-full cursor-pointer" for="input1">
+                                    What is OHC Guide?
+                            </label>
+
+                            <!--Chevron-->
+                            <div class="absolute top-9 right-4 lg:right-6 rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8333 7.5L9.99996 13.3333L4.16663 7.5" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                                         
+                            </div>
+
+                            <!--Answer-->
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                                <p class="text-gray-700 p-2 lg:text-lg">
+                                    OHC Guide is a one-stop insurance aggregator platform for citizens willing to study in Australia to get flexible tailored insurance policies as per their needs and budget.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!--2-->
+                        <div class="acordionWrapper relative border border-transparent border-b-gray-300 p-5">
+
+                            <!--Input Checkbox-->
+                            <input class="absolute peer opacity-0" type="checkbox" id="input2">
+
+                            <!--Question-->
+                            <label class="font-semibold flex text-lg lg:text-xl text-gray-900 my-4 px-2 w-full cursor-pointer" for="input2">
+                                Why to choose OHC Guide?
+                            </label>
+
+                            <!--Chevron-->
+                            <div class="absolute top-9 right-4 lg:right-6 rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8333 7.5L9.99996 13.3333L4.16663 7.5" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                                         
+                            </div>
+
+                            <!--Answer-->
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                                <p class="text-gray-700 p-2 lg:text-lg">
+                                    With your own dedicated agent portal we guide you to match the best policy for your client with an attractive commission on every policy.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!--3-->
+                        <div class="acordionWrapper relative border border-transparent border-b-gray-300 p-5">
+
+                            <!--Input Checkbox-->
+                            <input class="absolute peer opacity-0" type="checkbox" id="input3">
+
+                            <!--Question-->
+                            <label class="font-semibold flex text-lg lg:text-xl text-gray-900 my-4 px-2 w-full cursor-pointer" for="input3">
+                                Do agents need registration cost to enroll in OHC Guide?
+                            </label>
+
+                            <!--Chevron-->
+                            <div class="absolute top-9 right-4 lg:right-6 rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8333 7.5L9.99996 13.3333L4.16663 7.5" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                                         
+                            </div>
+
+                            <!--Answer-->
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                                <p class="text-gray-700 p-2 lg:text-lg">
+                                    No, OHC Guide doesn’t take any charges from the agents. All you have to do is SIGN UP and you are ready to use the services.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!--4-->
+                        <div class="acordionWrapper relative border border-transparent border-b-gray-300 p-5">
+
+                            <!--Input Checkbox-->
+                            <input class="absolute peer opacity-0" type="checkbox" id="input4">
+
+                            <!--Question-->
+                            <label class="font-semibold flex text-lg lg:text-xl text-gray-900 my-4 px-2 w-full cursor-pointer" for="input4">
+                                How can I track my commissions from OHC Guide portal?
+                            </label>
+
+                            <!--Chevron-->
+                            <div class="absolute top-9 right-4 lg:right-6 rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8333 7.5L9.99996 13.3333L4.16663 7.5" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                                         
+                            </div>
+
+                            <!--Answer-->
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                                <p class="text-gray-700 p-2 lg:text-lg">
+                                    By accessing your OHC Guide account, you will discover comprehensive information about your commissions, including payable amounts, outstanding balances, refunded sums, and the total transaction sum, conveniently displayed on the main page.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!--5-->
+                        <div class="acordionWrapper relative border border-transparent border-b-gray-300 p-5">
+
+                            <!--Input Checkbox-->
+                            <input class="absolute peer opacity-0" type="checkbox" id="input5">
+
+                            <!--Question-->
+                            <label class="font-semibold flex text-lg lg:text-xl text-gray-900 my-4 px-2 w-full cursor-pointer" for="input5">
+                                Can any agents rectify the wrong information while making a purchase?
+                            </label>
+
+                            <!--Chevron-->
+                            <div class="absolute top-9 right-4 lg:right-6 rotate-0 peer-checked:rotate-180 duration-200">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8333 7.5L9.99996 13.3333L4.16663 7.5" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                                         
+                            </div>
+
+                            <!--Answer-->
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                                <p class="text-gray-700 p-2 lg:text-lg">
+                                    Yes, the agents can directly apply for the amendment through the portal and get back the amended certificates within few minutes.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ============ Join Us ============ -->
+            <section class="joinSection w-screen flex mx-auto justify-center" id="joinUs">
+
+                <!--Join Us Container-->
+                <div class="joinSection relative flex flex-col items-center w-full px-6 lg:px-20 2xl:px-[250px] py-20 lg:py-40 gap-10 lg:gap-20">
+
+                    <!--Heading Section-->
+                    <div class="headingSection flex flex-col w-full gap-2 lg:gap-4 justify-center">
+
+                        <h3 class="font-medium text-2xl lg:text-4xl text-gray-900 text-center">
+                            50+ Education Consultancies have already joined <br> OHC Guide and started getting better deals.
+                        </h3>
+
+                    </div>
+
+                    <!--Logo Section-->
+                    <div class="logoContainer flex flex-col gap-5 md:gap-10 lg:gap-20">
+
+                        <!--Column 1-->
+                        <div class="logoColumn flex w-full gap-5 md:gap-10 lg:gap-20 justify-center">
+
+                            <div class="logo flex w-32 lg:w-64 px-2 justify-center">
+                                <img class="object-contain" src="./src/images/Testimonials/compass.png" alt="">
+                            </div>
+
+                            <div class="logo flex w-32 lg:w-64 px-2 justify-center">
+                                <img class="object-contain" src="./src/images/Testimonials/grace.png" alt="">
+                            </div>
+
+                            <div class="logo flex w-32 lg:w-64 px-2 justify-center">
+                                <img class="object-contain" src="./src/images/Testimonials/kathmandu.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                        <!--Column 2-->
+                        <div class="logoColumn flex w-full gap-5 md:gap-10 lg:gap-20 justify-center">
+    
+                            <div class="logo flex w-32 lg:w-64 px-2 justify-center">
+                                <img class="object-contain" src="./src/images/Testimonials/edwise.png" alt="">
+                            </div>
+    
+                            <div class="logo flex w-32 lg:w-64 px-2 justify-center">
+                                <img class="object-contain" src="./src/images/Testimonials/coastline.png" alt="">
+                            </div>
+
+                            <div class="logo flex w-32 lg:w-64 px-2 justify-center">
+                                <img class="object-contain" src="./src/images/Testimonials/scholar.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--Join CTA-->
+                    <a href="https://ohcguide.com/agent-enrollment">
+                        <button
+                            class="px-6 py-3 border bg-primary-500 text-white rounded font-semibold hover:shadow-md"
+                            type="button" onclick="www.ohcguide.com/agent-enrollment">
+                            Join Us Today
+                        </button>
+                    </a>
+
+                    <!--Blob Section-->
+                    <div class="backgroundBlob hidden md:flex absolute -z-10 -left-80 -top-40">
+                        <img src="./src/images/Blobs/Blob2.png" alt="">
+                    </div>
+
+                    <!--Blob Section-->
+                    <div class="backgroundBlob hidden md:flex absolute -z-10 -right-80 -bottom-60">
+                        <img src="./src/images/Blobs/Blob.png" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ============ Footer ============ -->
+            <footer class="flex flex-col w-screen bg-slate-800 items-center px-6 lg:px-20 2xl:px-[250px] py-10 lg:py-20">
+
+                <!--Footer Container-->
+                <div class="footerContainer flex flex-col lg:flex-row gap-10 w-full lg:justify-between items-center lg:items-start">
+
+                    <!--Logo with Content-->
+                    <!--Logo-->
+                    <div class="logoFooter">
+                        <img src="./src/images/Logo/Logo-Footer.png" alt="">
+                    </div>
+
+                    <!--Content-->
+                    <div class="footerContent flex flex-col w-full lg:w-3/4 gap-16 items-center lg:items-start">
+
+                        <!--Upper-->
+                        <div class="upper flex flex-col w-full lg:flex-row lg:justify-between gap-10 items-center">
+
+                            <!--Menu-->
+                            <div class="menuContainer flex flex-col lg:flex-row gap-5 items-center">
+
+                                <!--1-->
+                                <a href="#whyUs">
+                                    <h6 class="font-normal text-base text-white">
+                                        Why Us
+                                    </h6>
+                                </a>
+
+                                <!--2-->
+                                <a href="#benefits">
+                                    <h6 class="font-normal text-base text-white">
+                                        Benefits
+                                    </h6>
+                                </a>
+
+                                <!--3-->
+                                <a href="#testimonials">
+                                    <h6 class="font-normal text-base text-white">
+                                        Testimonials
+                                    </h6>
+                                </a>
+
+                                <!--4-->
+                                <a href="#joinUs">
+                                    <h6 class="font-normal text-base text-white">
+                                        Join Us
+                                    </h6>
+                                </a>
+
+                            </div>
+
+                            <!--Social Media-->
+                            <div class="socialMedias flex gap-5">
+
+                                <!--Facebook-->
+                                <a href="">
+                                    <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.0507812" width="36" height="36" rx="18" fill="#3B5998"/>
+                                        <path d="M21.402 27.0508V20.0848H23.735L24.084 17.3768H21.402V15.6488C21.402 14.8648 21.62 14.3298 22.744 14.3298H24.178V11.9078C23.4838 11.8341 22.7861 11.7984 22.088 11.8008C20.021 11.8008 18.606 13.0628 18.606 15.3808V17.3768H16.268V20.0848H18.606V27.0508H10C9.73478 27.0508 9.48043 26.9454 9.29289 26.7579C9.10536 26.5704 9 26.316 9 26.0508V10.0508C9 9.78556 9.10536 9.53121 9.29289 9.34367C9.48043 9.15614 9.73478 9.05078 10 9.05078H26C26.2652 9.05078 26.5196 9.15614 26.7071 9.34367C26.8946 9.53121 27 9.78556 27 10.0508V26.0508C27 26.316 26.8946 26.5704 26.7071 26.7579C26.5196 26.9454 26.2652 27.0508 26 27.0508H21.402Z" fill="white"/>
+                                    </svg>                                        
+                                </a>
+
+                                <!--Instagram-->
+                                <a href="https://www.instagram.com/ohc_guideau/">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_13395_10389)">
+                                        <rect width="36" height="36" rx="18" fill="#F5F5F5"/>
+                                        <path d="M29.6809 38.9778L6.3599 39C1.22927 39.0047 -2.97201 34.8115 -2.97784 29.6809L-3 6.3599C-3.00466 1.22927 1.18846 -2.97201 6.31908 -2.97784L29.6401 -3C34.7707 -3.00466 38.972 1.18846 38.9778 6.31909L39 29.6401C39.0058 34.7719 34.8115 38.9732 29.6809 38.9778Z" fill="url(#paint0_radial_13395_10389)"/>
+                                        <path d="M28.5684 36.98L7.46848 37C2.82648 37.0042 -0.974676 33.2104 -0.979951 28.5685L-0.999996 7.46848C-1.00422 2.82648 2.78956 -0.974676 7.43155 -0.979951L28.5315 -0.999996C33.1735 -1.00422 36.9747 2.78956 36.98 7.43155L37 28.5315C37.0053 33.1746 33.2104 36.9757 28.5684 36.98Z" fill="url(#paint1_radial_13395_10389)"/>
+                                        <path d="M18 23C15.2436 23 13 20.7571 13 18C13 15.2429 15.2436 13 18 13C20.7564 13 23 15.2429 23 18C23 20.7571 20.7564 23 18 23ZM18 14.4286C16.0307 14.4286 14.4286 16.0307 14.4286 18C14.4286 19.9693 16.0307 21.5714 18 21.5714C19.9693 21.5714 21.5714 19.9693 21.5714 18C21.5714 16.0307 19.9693 14.4286 18 14.4286Z" fill="white"/>
+                                        <path d="M23 14C23.5523 14 24 13.5523 24 13C24 12.4477 23.5523 12 23 12C22.4477 12 22 12.4477 22 13C22 13.5523 22.4477 14 23 14Z" fill="white"/>
+                                        <path d="M22.1538 27H13.8462C11.1745 27 9 24.8262 9 22.1538V13.8462C9 11.1738 11.1745 9 13.8462 9H22.1538C24.8255 9 27 11.1738 27 13.8462V22.1538C27 24.8262 24.8255 27 22.1538 27ZM13.8462 10.3846C11.9375 10.3846 10.3846 11.9375 10.3846 13.8462V22.1538C10.3846 24.0625 11.9375 25.6154 13.8462 25.6154H22.1538C24.0625 25.6154 25.6154 24.0625 25.6154 22.1538V13.8462C25.6154 11.9375 24.0625 10.3846 22.1538 10.3846H13.8462Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <radialGradient id="paint0_radial_13395_10389" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.6134 39.0303) scale(52.3545 52.3545)">
+                                        <stop stop-color="#FFDD55"/>
+                                        <stop offset="0.328" stop-color="#FF543F"/>
+                                        <stop offset="0.348" stop-color="#FC5245"/>
+                                        <stop offset="0.504" stop-color="#E64771"/>
+                                        <stop offset="0.643" stop-color="#D53E91"/>
+                                        <stop offset="0.761" stop-color="#CC39A4"/>
+                                        <stop offset="0.841" stop-color="#C837AB"/>
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_13395_10389" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.11478 -1.47443) scale(31.4527 20.9569)">
+                                        <stop stop-color="#4168C9"/>
+                                        <stop offset="0.999" stop-color="#4168C9" stop-opacity="0"/>
+                                        </radialGradient>
+                                        <clipPath id="clip0_13395_10389">
+                                        <rect width="36" height="36" rx="18" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>                                        
+                                </a>
+                                
+                            </div>
+
+                        </div>
+
+                        <!--Divider-->
+                        <div class="divider flex h-[1px] w-full bg-gray-700">
+                        </div>
+
+                        <!--Lower-->
+                        <div class="lower">
+
+                            <!--Privacy Policy-->
+                            <div class="menuContainer flex flex-col lg:flex-row gap-5 items-center">
+
+                                <!--1-->
+                                <a href="#">
+                                    <h6 class="font-normal text-sm underline text-white">
+                                        Privacy Policy
+                                    </h6>
+                                </a>
+
+                                <!--2-->
+                                <a href="#">
+                                    <h6 class="font-normal text-sm underline text-white">
+                                        Terms of Use
+                                    </h6>
+                                </a>
+
+                                <!--3-->
+                                <a href="#">
+                                    <h6 class="font-normal text-sm underline text-white">
+                                        Sales and Refunds
+                                    </h6>
+                                </a>
+
+                                <!--4-->
+                                <a href="#">
+                                    <h6 class="font-normal text-sm underline text-white">
+                                        Legal
+                                    </h6>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!--Copyright-->
+                        <div class="copyright">
+                            <p class="text-gray-100">
+                                2023 OHC. All right reserved.
+                            </p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </footer>
+
+        </main>
+
+
+        <!-- ============Script Section============ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <script>
+
+            // Owl Carousle            
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                        items: 1,
+                        loop: true,
+                        autoplay: true,
+                        autoplayHoverPause: true,
+                        nav: true
+                    });
+                });
+
+
+            // Tab Switch
+            const individualBtnTab = document.getElementById("flex-item-1");
+            const businessBtnTab = document.getElementById("flex-item-2");
+            const divIndividualTab = document.getElementById ("individual_div");
+            const divBusinessTab = document.getElementById ("business_div");
+
+            individualBtnTab.addEventListener("click", ()=>{
+                individualBtnTab.classList.add ("activeTab");
+                businessBtnTab.classList.remove ("activeTab");
+                divBusinessTab.style.zIndex = 0;
+                divIndividualTab.style.zIndex = 1;
+                divBusinessTab.style.display = "none";
+                divIndividualTab.style.display = 'flex';
+                divIndividualTab.style.height = "fit-content";
+            })
+
+            businessBtnTab.addEventListener("click", ()=>{
+                businessBtnTab.classList.add ("activeTab");
+                individualBtnTab.classList.remove ("activeTab");
+                divIndividualTab.style.zIndex = 0;
+                divBusinessTab.style.zIndex = 1;
+                divIndividualTab.style.display = 'none';
+                divBusinessTab.style.display = 'flex';
+                divBusinessTab.style.height = 'fit-content';
+            })
+
+        </script>
+
+    </body>
+
+</html>
